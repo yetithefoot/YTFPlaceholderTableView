@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name     = 'YTFPlaceholderTableView'
   s.version  = '0.1'
-  s.license  = 'MIT'
+  s.license  = 'Free'
   s.summary  = 'Simple UITableView with placeholder'
   s.homepage = 'https://github.com/yetithefoot/YTFPlaceholderTableView'
   s.authors  = {'YetiTheFoot' => 'reg.yeti@gmail.com'}
