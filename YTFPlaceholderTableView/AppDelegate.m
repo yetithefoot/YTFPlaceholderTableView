@@ -1,19 +1,16 @@
 //
-//  YTFAppDelegate.m
-//  YTFPlaceholderTableViewExample
+//  AppDelegate.m
+//  YTFPlaceholderTableView
 //
-//  Created by Vlad Tsepelev on 18.07.12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by yeti on 28.09.12.
+//  Copyright (c) 2012 yeti. All rights reserved.
 //
 
-#import "YTFAppDelegate.h"
+#import "AppDelegate.h"
 
 #import "YTFViewController.h"
 
-@implementation YTFAppDelegate
-
-@synthesize window = _window;
-@synthesize viewController = _viewController;
+@implementation AppDelegate
 
 - (void)dealloc
 {

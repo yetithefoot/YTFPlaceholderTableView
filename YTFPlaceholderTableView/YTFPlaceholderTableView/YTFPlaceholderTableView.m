@@ -19,7 +19,7 @@
     _placeholderText.textAlignment = UITextAlignmentCenter;
     _placeholderText.font = [UIFont boldSystemFontOfSize:22];
     _placeholderText.textColor = [UIColor grayColor];
-    _placeholderText.text = NSLocalizedString(@"No items... =(", @"No items songs");
+    _placeholderText.text = NSLocalizedString(@"No items... =(", @"");
     _placeholderText.center = _placeholderView.center;
     [_placeholderView addSubview:_placeholderText];
 }

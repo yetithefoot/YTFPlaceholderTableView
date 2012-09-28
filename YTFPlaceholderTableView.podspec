@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.source_files = 'YTFPlaceholderTableView'
   s.requires_arc = false
 
-  s.framework = 'UIKit', 'Foundation'
-  s.prefix_header_contents = '#import <UIKit/UIKit.h>', '#import <Foundation/Foundation.h>'
+  s.framework = 'UIKit', 'Foundation', 'QuartzCore'
+  s.prefix_header_contents = '#import <UIKit/UIKit.h>', '#import <Foundation/Foundation.h>', '#import <QuartzCore/QuartzCore.h>'
 end

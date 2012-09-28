@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D09F7ADB1615F8400059F598 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09F7ADA1615F8400059F598 /* UIKit.framework */; };
+		D09F7ADD1615F8400059F598 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09F7ADC1615F8400059F598 /* Foundation.framework */; };
+		D09F7ADF1615F8400059F598 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09F7ADE1615F8400059F598 /* CoreGraphics.framework */; };
+		D09F7B1D1615F89B0059F598 /* YTFPlaceholderTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D09F7B111615F89B0059F598 /* YTFPlaceholderTableView.m */; };
+		D09F7B2E1615F9D00059F598 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D09F7B211615F9D00059F598 /* AppDelegate.m */; };
+		D09F7B2F1615F9D00059F598 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D09F7B221615F9D00059F598 /* Default-568h@2x.png */; };
+		D09F7B301615F9D00059F598 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D09F7B231615F9D00059F598 /* Default.png */; };
+		D09F7B311615F9D00059F598 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D09F7B241615F9D00059F598 /* Default@2x.png */; };
+		D09F7B321615F9D00059F598 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D09F7B261615F9D00059F598 /* InfoPlist.strings */; };
+		D09F7B341615F9D00059F598 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D09F7B291615F9D00059F598 /* main.m */; };
+		D09F7B351615F9D00059F598 /* YTFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09F7B2C1615F9D00059F598 /* YTFViewController.m */; };
+		D09F7B361615F9D00059F598 /* YTFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D09F7B2D1615F9D00059F598 /* YTFViewController.xib */; };
+		D09F7B381615FAF00059F598 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D09F7B371615FAEF0059F598 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D09F7AD61615F8400059F598 /* YTFPlaceholderTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTFPlaceholderTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D09F7ADA1615F8400059F598 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D09F7ADC1615F8400059F598 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D09F7ADE1615F8400059F598 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D09F7B101615F89B0059F598 /* YTFPlaceholderTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTFPlaceholderTableView.h; sourceTree = "<group>"; };
+		D09F7B111615F89B0059F598 /* YTFPlaceholderTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTFPlaceholderTableView.m; sourceTree = "<group>"; };
+		D09F7B201615F9D00059F598 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D09F7B211615F9D00059F598 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D09F7B221615F9D00059F598 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D09F7B231615F9D00059F598 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D09F7B241615F9D00059F598 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D09F7B271615F9D00059F598 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		D09F7B281615F9D00059F598 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		D09F7B291615F9D00059F598 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D09F7B2A1615F9D00059F598 /* YTFPlaceholderTableView-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "YTFPlaceholderTableView-Prefix.pch"; sourceTree = "<group>"; };
+		D09F7B2B1615F9D00059F598 /* YTFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTFViewController.h; sourceTree = "<group>"; };
+		D09F7B2C1615F9D00059F598 /* YTFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTFViewController.m; sourceTree = "<group>"; };
+		D09F7B2D1615F9D00059F598 /* YTFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YTFViewController.xib; sourceTree = "<group>"; };
+		D09F7B371615FAEF0059F598 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D09F7AD31615F8400059F598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09F7B381615FAF00059F598 /* QuartzCore.framework in Frameworks */,
+				D09F7ADB1615F8400059F598 /* UIKit.framework in Frameworks */,
+				D09F7ADD1615F8400059F598 /* Foundation.framework in Frameworks */,
+				D09F7ADF1615F8400059F598 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D09F7ACB1615F8400059F598 = {
+			isa = PBXGroup;
+			children = (
+				D09F7B371615FAEF0059F598 /* QuartzCore.framework */,
+				D09F7B201615F9D00059F598 /* AppDelegate.h */,
+				D09F7B211615F9D00059F598 /* AppDelegate.m */,
+				D09F7B221615F9D00059F598 /* Default-568h@2x.png */,
+				D09F7B231615F9D00059F598 /* Default.png */,
+				D09F7B241615F9D00059F598 /* Default@2x.png */,
+				D09F7B251615F9D00059F598 /* en.lproj */,
+				D09F7B281615F9D00059F598 /* info.plist */,
+				D09F7B291615F9D00059F598 /* main.m */,
+				D09F7B2A1615F9D00059F598 /* YTFPlaceholderTableView-Prefix.pch */,
+				D09F7B2B1615F9D00059F598 /* YTFViewController.h */,
+				D09F7B2C1615F9D00059F598 /* YTFViewController.m */,
+				D09F7B2D1615F9D00059F598 /* YTFViewController.xib */,
+				D09F7B0F1615F89B0059F598 /* YTFPlaceholderTableView */,
+				D09F7AD91615F8400059F598 /* Frameworks */,
+				D09F7AD71615F8400059F598 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D09F7AD71615F8400059F598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D09F7AD61615F8400059F598 /* YTFPlaceholderTableView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D09F7AD91615F8400059F598 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D09F7ADA1615F8400059F598 /* UIKit.framework */,
+				D09F7ADC1615F8400059F598 /* Foundation.framework */,
+				D09F7ADE1615F8400059F598 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D09F7B0F1615F89B0059F598 /* YTFPlaceholderTableView */ = {
+			isa = PBXGroup;
+			children = (
+				D09F7B101615F89B0059F598 /* YTFPlaceholderTableView.h */,
+				D09F7B111615F89B0059F598 /* YTFPlaceholderTableView.m */,
+			);
+			path = YTFPlaceholderTableView;
+			sourceTree = "<group>";
+		};
+		D09F7B251615F9D00059F598 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				D09F7B261615F9D00059F598 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D09F7AD51615F8400059F598 /* YTFPlaceholderTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D09F7AFA1615F8400059F598 /* Build configuration list for PBXNativeTarget "YTFPlaceholderTableView" */;
+			buildPhases = (
+				D09F7AD21615F8400059F598 /* Sources */,
+				D09F7AD31615F8400059F598 /* Frameworks */,
+				D09F7AD41615F8400059F598 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YTFPlaceholderTableView;
+			productName = YTFPlaceholderTableView;
+			productReference = D09F7AD61615F8400059F598 /* YTFPlaceholderTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D09F7ACD1615F8400059F598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = yeti;
+			};
+			buildConfigurationList = D09F7AD01615F8400059F598 /* Build configuration list for PBXProject "YTFPlaceholderTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D09F7ACB1615F8400059F598;
+			productRefGroup = D09F7AD71615F8400059F598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D09F7AD51615F8400059F598 /* YTFPlaceholderTableView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D09F7AD41615F8400059F598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09F7B2F1615F9D00059F598 /* Default-568h@2x.png in Resources */,
+				D09F7B301615F9D00059F598 /* Default.png in Resources */,
+				D09F7B311615F9D00059F598 /* Default@2x.png in Resources */,
+				D09F7B321615F9D00059F598 /* InfoPlist.strings in Resources */,
+				D09F7B361615F9D00059F598 /* YTFViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D09F7AD21615F8400059F598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D09F7B1D1615F89B0059F598 /* YTFPlaceholderTableView.m in Sources */,
+				D09F7B2E1615F9D00059F598 /* AppDelegate.m in Sources */,
+				D09F7B341615F9D00059F598 /* main.m in Sources */,
+				D09F7B351615F9D00059F598 /* YTFViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D09F7B261615F9D00059F598 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D09F7B271615F9D00059F598 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D09F7AF81615F8400059F598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D09F7AF91615F8400059F598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D09F7AFB1615F8400059F598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YTFPlaceholderTableView-Prefix.pch";
+				INFOPLIST_FILE = info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D09F7AFC1615F8400059F598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "YTFPlaceholderTableView-Prefix.pch";
+				INFOPLIST_FILE = info.plist;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D09F7AD01615F8400059F598 /* Build configuration list for PBXProject "YTFPlaceholderTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D09F7AF81615F8400059F598 /* Debug */,
+				D09F7AF91615F8400059F598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D09F7AFA1615F8400059F598 /* Build configuration list for PBXNativeTarget "YTFPlaceholderTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D09F7AFB1615F8400059F598 /* Debug */,
+				D09F7AFC1615F8400059F598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D09F7ACD1615F8400059F598 /* Project object */;
+}
