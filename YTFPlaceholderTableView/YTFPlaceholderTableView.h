@@ -10,7 +10,7 @@
 
 @interface YTFPlaceholderTableView : UITableView{
     UIView *_placeholderView;
-    UILabel * _placeholderText;
+    UILabel *_placeholderText;
 }
 
 @property (nonatomic,readonly) bool tableViewHasRows;

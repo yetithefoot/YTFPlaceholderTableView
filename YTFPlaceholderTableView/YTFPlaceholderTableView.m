@@ -12,13 +12,11 @@
 @implementation YTFPlaceholderTableView
 
 
-
 -(void) initPlaceholderView{
-    _placeholderView = [[UIView alloc]init];
+    _placeholderView = [[UIView alloc] init];
     _placeholderView.backgroundColor = [UIColor clearColor];
-    _placeholderText = [[UILabel alloc]init];
+    _placeholderText = [[UILabel alloc] init];
     _placeholderText.textAlignment = UITextAlignmentCenter;
-    //_placeholderText.backgroundColor = [UIColor clearColor];
     _placeholderText.font = [UIFont boldSystemFontOfSize:22];
     _placeholderText.textColor = [UIColor grayColor];
     _placeholderText.text = NSLocalizedString(@"No items... =(", @"No items songs");
@@ -67,7 +65,6 @@
     const CGRect rect = self.frame;
     _placeholderView.frame  = rect;
     _placeholderText.frame = CGRectMake(0, 0, rect.size.width, rect.size.height);
-    //_placeholderText.center = _placeholderView.center;
     
     const bool shouldShowEmptyView = self.tableViewHasRows;
     const bool emptyViewShown      = _placeholderView.superview != nil;
