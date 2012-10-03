@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "YTFPlaceholderTableView.h"
+#import <YTFPlaceholderTableView/YTFPlaceholderTableView.h>
 
 
 @interface YTFViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
