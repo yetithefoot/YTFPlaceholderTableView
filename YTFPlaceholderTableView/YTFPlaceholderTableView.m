@@ -11,17 +11,20 @@
 
 @implementation YTFPlaceholderTableView
 
+@synthesize placeholderText;
 
--(void) initPlaceholderView{
-    _placeholderView = [[UIView alloc] init];
-    _placeholderView.backgroundColor = [UIColor clearColor];
-    _placeholderText = [[UILabel alloc] init];
-    _placeholderText.textAlignment = UITextAlignmentCenter;
-    _placeholderText.font = [UIFont boldSystemFontOfSize:22];
-    _placeholderText.textColor = [UIColor grayColor];
-    _placeholderText.text = NSLocalizedString(@"No items... =(", @"");
-    _placeholderText.center = _placeholderView.center;
-    [_placeholderView addSubview:_placeholderText];
+
+-(void) initPlaceholderView{    
+    placeholderText = [[UILabel alloc] init];
+    placeholderText.textAlignment = UITextAlignmentCenter;
+    placeholderText.font = [UIFont boldSystemFontOfSize:22];
+    placeholderText.textColor = [UIColor blackColor];
+    placeholderText.backgroundColor = self.backgroundColor;
+    //placeholderText.layer.borderColor = [UIColor blackColor].CGColor;
+    //placeholderText.layer.borderWidth = 1.0;
+    placeholderText.text = NSLocalizedString(@"No items...", @"");
+    placeholderText.center = self.center;
+    [self addSubview:placeholderText];
 }
 
 - (id)init
@@ -60,28 +63,44 @@
     return [self numberOfRowsInSection:0] == 0;
 }
 
-- (void) updateEmptyPage
+- (void) updateEmptyPageAnimated:(BOOL) animated 
 {
-    const CGRect rect = self.frame;
-    _placeholderView.frame  = rect;
-    _placeholderText.frame = CGRectMake(0, 0, rect.size.width, rect.size.height);
-    
-    const bool shouldShowEmptyView = self.tableViewHasRows;
-    const bool emptyViewShown      = _placeholderView.superview != nil;
-    
-    if (shouldShowEmptyView == emptyViewShown) return;
-    
-    CATransition *animation = [CATransition animation];
-    [animation setDuration:0.5];
-    [animation setType:kCATransitionFade];
-    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
-    [[self layer] addAnimation:animation forKey:kCATransitionReveal];
-    
-    if (shouldShowEmptyView){
-        [self.superview addSubview:_placeholderView];
-    }
-    else{
-        [_placeholderView removeFromSuperview];
+    if(!self.hidden){
+        CGRect rect = self.frame;
+        
+        if([placeholderText.text sizeWithFont:placeholderText.font].width >= self.frame.size.width){
+            placeholderText.transform = CGAffineTransformMakeRotation( -M_PI/2 );
+        }else{
+            placeholderText.transform = CGAffineTransformIdentity;
+        }
+        
+        rect.origin.y += 20;
+        rect.size.height -= 20;
+        placeholderText.frame  = rect;
+        
+        const bool shouldShowEmptyView = self.tableViewHasRows;
+        const bool emptyViewShown      = placeholderText.superview != nil;
+        
+        if (shouldShowEmptyView == emptyViewShown) return;
+        
+        if (animated) {
+            CATransition *animation = [CATransition animation];
+            [animation setDuration:0.5];
+            [animation setType:kCATransitionFade];
+            [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn]];
+            [[self layer] addAnimation:animation forKey:kCATransitionReveal];
+        }else {
+            [[self layer] addAnimation:nil forKey:kCATransitionReveal];
+        }
+        
+
+        
+        if (shouldShowEmptyView){
+            [self.superview addSubview:placeholderText];
+        }
+        else{
+            [placeholderText removeFromSuperview];
+        }
     }
 }
 
@@ -90,13 +109,13 @@
 - (void) layoutSubviews
 {
     [super layoutSubviews];
-    [self updateEmptyPage];
+    [self updateEmptyPageAnimated:NO];
 }
 
 - (UIView*) hitTest:(CGPoint)point withEvent:(UIEvent *)event
 {
     // Prevent any interaction when the empty view is shown
-    const bool emptyViewShown = _placeholderView.superview != nil;
+    const bool emptyViewShown = placeholderText.superview != nil;
     return emptyViewShown ? nil : [super hitTest:point withEvent:event];
 }
 
@@ -105,13 +124,12 @@
 - (void) reloadData
 {
     [super reloadData];
-    [self updateEmptyPage];
+    [self updateEmptyPageAnimated:NO];
 }
 
 - (void)dealloc
 {
-    [_placeholderView release];
-    [_placeholderText release];
+    [placeholderText release];
     [super dealloc];
 }
 

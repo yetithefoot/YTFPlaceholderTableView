@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Example
+//  YTFPlaceholderTableView
 //
-//  Created by yeti on 03.10.12.
+//  Created by yeti on 28.09.12.
 //  Copyright (c) 2012 yeti. All rights reserved.
 //
 

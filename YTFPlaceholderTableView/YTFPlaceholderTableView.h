@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface YTFPlaceholderTableView : UITableView{
-    UIView *_placeholderView;
-    UILabel *_placeholderText;
+
 }
 
 @property (nonatomic,readonly) bool tableViewHasRows;
+@property (nonatomic,retain) UILabel * placeholderText;
 
 @end
