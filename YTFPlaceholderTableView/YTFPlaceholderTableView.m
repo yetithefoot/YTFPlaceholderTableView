@@ -20,11 +20,8 @@
     placeholderText.font = [UIFont boldSystemFontOfSize:22];
     placeholderText.textColor = [UIColor blackColor];
     placeholderText.backgroundColor = self.backgroundColor;
-    //placeholderText.layer.borderColor = [UIColor blackColor].CGColor;
-    //placeholderText.layer.borderWidth = 1.0;
     placeholderText.text = NSLocalizedString(@"No items...", @"");
     placeholderText.center = self.center;
-    [self addSubview:placeholderText];
 }
 
 - (id)init

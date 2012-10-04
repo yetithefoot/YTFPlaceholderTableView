@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
   s.platform = :ios
   s.name     = 'YTFPlaceholderTableView'
-  s.version  = '0.1'
+  s.version  = '0.2.1'
   s.license  = 'MIT'
   s.summary  = 'UITableView with placeholder view.'
   s.homepage = 'https://github.com/yetithefoot/YTFPlaceholderTableView'
   s.authors  = {'YetiTheFoot' => 'reg.yeti@gmail.com'}
-  s.source   = { :git => 'https://github.com/yetithefoot/YTFPlaceholderTableView.git', :tag => '0.1'}
+  s.source   = { :git => 'https://github.com/yetithefoot/YTFPlaceholderTableView.git', :tag => '0.2.1'}
   s.source_files = 'YTFPlaceholderTableView'
   s.requires_arc = false
 
