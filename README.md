@@ -1,4 +1,4 @@
 YTFPlaceholderTableView
 =======================
 
-Simple UITableView with placeholder view  
+Simple UITableView with placeholder view.
